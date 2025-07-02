@@ -1,6 +1,7 @@
 import { FileUpload } from "@/components/FileUpload";
 import { db } from "@/utils/dbConnection";
 import Image from "next/image";
+import styles from "@/styles/Images.module.css";
 
 export default async function Images() {
   const query = await db.query(
@@ -10,7 +11,7 @@ export default async function Images() {
   console.log(data);
 
   return (
-    <>
+    <div className={styles.container}>
       {data.map((image) => (
         <div key={image.id}>
           <Image
@@ -18,9 +19,10 @@ export default async function Images() {
             alt={image.name}
             width={300}
             height={200}
+            className={styles.image}
           />
         </div>
       ))}
-    </>
+    </div>
   );
 }
