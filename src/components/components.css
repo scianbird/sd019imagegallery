@@ -1,3 +1,17 @@
 .headerClass {
   display: flex;
+  background-color: #f8f0fb;
+  height: 8dvh;
+  align-items: center;
+  gap: 1rem;
+}
+
+.headerButton {
+  cursor: pointer;
+  height: 3rem;
+  font-size: large;
+}
+
+.headerButton:hover {
+  background-color: rgba(128, 117, 255, 0.5);
 }
