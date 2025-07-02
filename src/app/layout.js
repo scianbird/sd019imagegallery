@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono, Fredoka } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 const fredoka = Fredoka({
-  variable: "--font-geist-fredoka",
+  variable: "--font-fredoka",
   subsets: ["latin"],
 });
 
@@ -30,6 +31,7 @@ export default function RootLayout({ children }) {
       >
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
