@@ -59,3 +59,15 @@
 .accordContent {
   font-size: 1.3rem;
 }
+
+.theDropzone {
+  background-color: #211a1d;
+  color: #f8f0fb;
+  font-family: var(--font-fredoka);
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  gap: 20px;
+}
