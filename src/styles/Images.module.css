@@ -14,4 +14,9 @@
 .image {
   border: solid #6320ee 2px;
   border-radius: 20px;
+  transition: transform 0.2s;
+}
+
+.image:hover {
+  transform: scale(1.5);
 }
