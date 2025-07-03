@@ -1,10 +1,13 @@
 import { FileUpload } from "@/components/FileUpload";
+import "@/components/components.css";
 
 export default function upload() {
   return (
     <>
-      <h1>Please upload an image here!</h1>
-      <FileUpload />
+      <section className="theDropzone">
+        <h1>Please upload an image here!</h1>
+        <FileUpload />
+      </section>
     </>
   );
 }
